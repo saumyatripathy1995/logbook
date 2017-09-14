@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD</title>
+</head>
+<body>
+<form action="{% url 'add' %}" method="post">{% csrf_token %}
+    <input type="text" name="name" placeholder="Name"/>
+    <input type="date" name="date" placeholder="Date"/>
+    <input type="text" name="description" value="Description"/>
+    <input type="time" name="time" value="Time"/>
+    <input type="submit" name="submit" value="Submit"/>
+</form>
+</body>
+</html>
